@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script created for Ubuntu 24.04
 # To execute run:
-# curl | bash
+# curl https://raw.githubusercontent.com/pedroeloy/ubuntu/refs/heads/main/scripts/setup_ubuntu.sh | bash
 
 # Start by updating the system and rebooting
 #sudo apt update -y && sudo apt upgrade -y
