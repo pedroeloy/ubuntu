@@ -3,6 +3,7 @@
 # To execute run:
 # curl https://raw.githubusercontent.com/pedroeloy/ubuntu/refs/heads/main/scripts/setup_ubuntu.sh | bash
 
+echo Executing script...
 
 # Start by updating the system and rebooting
 #sudo apt update -y && sudo apt upgrade -y
