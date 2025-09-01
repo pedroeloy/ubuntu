@@ -3,8 +3,9 @@
 # To execute run:
 # curl -fsSL https://raw.githubusercontent.com/pedroeloy/ubuntu/refs/heads/main/scripts/setup_ubuntu.sh | bash
 
-sleep 5s
+echo
 echo Executing script...
+echo
 
 # Start by updating the system and rebooting
 #sudo apt update -y && sudo apt upgrade -y
