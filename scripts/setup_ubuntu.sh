@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script created for Ubuntu 24.04
 # To execute run:
-# curl https://raw.githubusercontent.com/pedroeloy/ubuntu/refs/heads/main/scripts/setup_ubuntu.sh | bash
+# curl -fsSL https://raw.githubusercontent.com/pedroeloy/ubuntu/refs/heads/main/scripts/setup_ubuntu.sh | bash
 
 echo Executing script...
 
