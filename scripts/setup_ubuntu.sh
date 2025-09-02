@@ -15,6 +15,9 @@ echo
 #For Virtualbox guest additions install/upgrade
 #sudo apt install bzip2 tar gcc make perl -y
 
+#Set keyboard permanently for user only
+gsettings set org.gnome.desktop.input-sources sources "[('xkb','pt')]"
+
 
 #Set Settings->Appearance to Blue, defaults are: Yaru, Adwaita, Yaru
 #gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-blue'
