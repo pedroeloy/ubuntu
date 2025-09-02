@@ -20,9 +20,9 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb','pt')]"
 
 
 #Set Settings->Appearance to Blue, defaults are: Yaru, Adwaita, Yaru
-#gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-blue'
-#gsettings set org.gnome.desktop.wm.preferences theme 'Yaru-blue'
-#gsettings set org.gnome.desktop.interface icon-theme 'Yaru-blue'
+#gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-blue'         # Settings->Appearance->Style->Color = Blue  //Default=Orange=Yaru
+#gsettings set org.gnome.desktop.wm.preferences theme 'Yaru-blue'        #        
+#gsettings set org.gnome.desktop.interface icon-theme 'Yaru-blue'        # Settings->Appearance->Style->Color = Blue  //Default=Orange=Yaru
 
 #Install User Themes Extension that is included in gnome-shell-extensions and enable it
 #sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extensions -y
