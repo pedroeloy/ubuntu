@@ -15,7 +15,7 @@ echo
 #For Virtualbox guest additions install/upgrade
 #sudo apt install bzip2 tar gcc make perl -y
 
-#Set keyboard permanently for user only
+#Set PT keyboard permanently but for user only
 gsettings set org.gnome.desktop.input-sources sources "[('xkb','pt')]"
 
 
