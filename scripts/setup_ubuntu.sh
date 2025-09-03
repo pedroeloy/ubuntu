@@ -18,6 +18,8 @@ echo
 #Set PT keyboard permanently but for user only
 gsettings set org.gnome.desktop.input-sources sources "[('xkb','pt')]"
 
+#Settings->Accessibility->Always show scrollbars
+gsettings set org.gnome.desktop.interface overlay-scrolling false
 
 #Set Settings->Appearance to Blue, defaults are: Yaru, Adwaita, Yaru
 #gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-blue'         # Settings->Appearance->Style->Color = Blue  //Default=Orange=Yaru
@@ -29,9 +31,6 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb','pt')]"
 
 #gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 #gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-blue'
-
-#Settings->Accessibility->Always show scrollbars
-gsettings set org.gnome.desktop.interface overlay-scrolling false
 
 
 #Install MSEdge from repository
