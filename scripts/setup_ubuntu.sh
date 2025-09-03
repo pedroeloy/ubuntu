@@ -7,13 +7,17 @@ echo
 echo Executing script...
 echo
 
-# Start by updating the system and rebooting
-#sudo apt update -y && sudo apt upgrade -y
+# Start by updating/upgrade the system and rebooting
+#sudo apt update -y 
+#sudo apt upgrade -y
 #sudo reboot
-
 
 #For Virtualbox guest additions install/upgrade
 #sudo apt install bzip2 tar gcc make perl -y
+
+#Set mouse acceleration similar to Windows
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile adaptive
+gsettings set org.gnome.desktop.peripherals.mouse speed 0.3
 
 #Set PT keyboard permanently but for user only
 gsettings set org.gnome.desktop.input-sources sources "[('xkb','pt')]"
