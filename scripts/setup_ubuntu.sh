@@ -26,26 +26,26 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb','pt')]"
 gsettings set org.gnome.desktop.interface overlay-scrolling false
 
 #Set Settings->Appearance to Blue, defaults are: Yaru, Adwaita, Yaru
-#gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'     # Choose light theme   
-#gsettings set org.gnome.desktop.interface gtk-theme   'Yaru-blue'         # Settings->Appearance->Style->Color = Blue  //Default=Orange=Yaru
-#gsettings set org.gnome.desktop.wm.preferences theme  'Yaru-blue'         # Default=Adwaita        
-#gsettings set org.gnome.desktop.interface icon-theme  'Yaru-blue'         # Settings->Appearance->Style->Color = Blue  //Default=Orange=Yaru
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'     # Choose light theme   
+gsettings set org.gnome.desktop.interface gtk-theme   'Yaru-blue'         # Settings->Appearance->Style->Color = Blue  //Default=Orange=Yaru
+gsettings set org.gnome.desktop.wm.preferences theme  'Yaru-blue'         # Default=Adwaita        
+gsettings set org.gnome.desktop.interface icon-theme  'Yaru-blue'         # Settings->Appearance->Style->Color = Blue  //Default=Orange=Yaru
 
 #Install User Themes Extension that is included in gnome-shell-extensions and enable it
-#sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extensions -y
+sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extensions -y
 
 #gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 #gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-blue'
 
 
 #Install MSEdge from repository
-#sudo apt install curl -y
-#curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-#sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
-#sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge.list'
-#rm microsoft.gpg
-#sudo apt update -y
-#sudo apt install microsoft-edge-stable -y
+sudo apt install curl -y
+curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge.list'
+rm microsoft.gpg
+sudo apt update -y
+sudo apt install microsoft-edge-stable -y
 
 
 #gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-blue'
