@@ -34,6 +34,7 @@ gsettings set org.gnome.desktop.interface icon-theme  'Yaru-blue'         # Sett
 #Install User Themes Extension that is included in gnome-shell-extensions and enable it
 sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extensions -y
 
+# Install impatience extension com increase animation speed
 #gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 #gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-blue'
 
