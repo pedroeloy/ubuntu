@@ -15,7 +15,7 @@ echo
 #For Virtualbox guest additions install/upgrade
 #sudo apt install bzip2 tar gcc make perl -y
 
-#Set mouse acceleration similar to Windows
+#Set mouse acceleration similar to Windows (original: accel-profile='default') 
 #gsettings set org.gnome.desktop.peripherals.mouse accel-profile adaptive
 #gsettings set org.gnome.desktop.peripherals.mouse speed 0.3
 
