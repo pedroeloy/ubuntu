@@ -34,7 +34,7 @@ gsettings set org.gnome.desktop.interface icon-theme  'Yaru-blue'         # Sett
 #Install User Themes Extension that is included in gnome-shell-extensions and enable it
 sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extensions -y
 
-#Move the Show Apps button from the bottom to the top (original=false)
+#Move the Dock "Show Apps" button from the bottom to the top (original=false)
 gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 
 # Gnome extention "Jut Perfection"
