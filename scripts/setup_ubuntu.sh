@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 # Script created for Ubuntu 24.04
 # To execute run:
@@ -24,6 +25,9 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb','pt')]"
 
 #Settings->Accessibility->Always show scrollbars
 gsettings set org.gnome.desktop.interface overlay-scrolling false
+
+#Settings->Accessibility->Seeing->Cursor Size Medium (original=24)
+#gsettings set org.gnome.desktop.interface cursor-size 32
 
 #Set Settings->Appearance to Blue, defaults are: Yaru, Adwaita, Yaru
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'     # Choose light theme   
