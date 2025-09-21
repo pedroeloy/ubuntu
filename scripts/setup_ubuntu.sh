@@ -34,6 +34,9 @@ gsettings set org.gnome.desktop.interface icon-theme  'Yaru-blue'         # Sett
 #Install User Themes Extension that is included in gnome-shell-extensions and enable it
 sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extensions -y
 
+#Move the Show Apps button from the bottom to the top (original=false)
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
+
 # Gnome extention "Jut Perfection"
 # Install "impatience" extension to increase animation speed, or view and try:  Just set GNOME_SHELL_SLOWDOWN_FACTOR=0.5 in /etc/environment.
 # Install "App Icons Taskbar" extension has an alternativo to "dash to panel"
