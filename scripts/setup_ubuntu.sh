@@ -54,6 +54,13 @@ rm microsoft.gpg
 sudo apt update -y
 sudo apt install microsoft-edge-stable -y
 
+
+
+# Grub Customizer for helping with dualboot menu: https://launchpad.net/~danielrichter2007/+archive/ubuntu/grub-customizer
+#sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+#sudo apt-get update
+#sudo apt-get install grub-customizer
+
 #Install extras including microsoft fonts and extra codecs, must be run manually to accept EULAs.
 #sudo apt install ubuntu-restricted-extras
 
