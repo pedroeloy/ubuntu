@@ -54,6 +54,8 @@ rm microsoft.gpg
 sudo apt update -y
 sudo apt install microsoft-edge-stable -y
 
+#Install extras including microsoft fonts and extra codecs, must be run manually to accept EULAs.
+#sudo apt install ubuntu-restricted-extras
 
 #gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-blue'
 #TERMINAL_PROFILEID=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')
