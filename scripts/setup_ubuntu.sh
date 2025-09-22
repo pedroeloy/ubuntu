@@ -49,7 +49,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 #gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-blue'
 
 
-#Install MSEdge from repository
+# Install MSEdge from repository
 sudo apt install curl -y
 curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
@@ -58,14 +58,17 @@ rm microsoft.gpg
 sudo apt update -y
 sudo apt install microsoft-edge-stable -y
 
-
+# Disable ntfs3 kernel driver, and use instead the FUSE ntfs-3g driver that is more reliable
+# https://bugs.launchpad.net/ubuntu/+source/ntfs-3g/+bug/2062972
+# reboot after the change!
+#echo 'blacklist ntfs3' | sudo tee /etc/modprobe.d/disable-ntfs3.conf
 
 # Grub Customizer for helping with dualboot menu: https://launchpad.net/~danielrichter2007/+archive/ubuntu/grub-customizer
 #sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 #sudo apt-get update
 #sudo apt-get install grub-customizer
 
-#Install extras including microsoft fonts and extra codecs, must be run manually to accept EULAs.
+# Install extras including microsoft fonts and extra codecs, must be run manually to accept EULAs.
 #sudo apt install ubuntu-restricted-extras
 
 #gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-blue'
