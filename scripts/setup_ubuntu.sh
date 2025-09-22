@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 # Script created for Ubuntu 24.04
 # To execute run:
@@ -80,6 +81,10 @@ sudo apt install microsoft-edge-stable -y
 #sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 #sudo apt-get update
 #sudo apt-get install grub-customizer
+
+
+# Install Geany Text Editor and get colour themes!
+#sudo apt install geany
 
 # Install extras including microsoft fonts and extra codecs, must be run manually to accept EULAs.
 # Dont install because ttf-mscorefonts-installer seems disrupt font rendering on  chrome/edge!
