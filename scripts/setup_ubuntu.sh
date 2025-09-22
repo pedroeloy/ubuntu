@@ -69,6 +69,7 @@ sudo apt install microsoft-edge-stable -y
 #sudo apt-get install grub-customizer
 
 # Install extras including microsoft fonts and extra codecs, must be run manually to accept EULAs.
+# Dont install because ttf-mscorefonts-installer seems disrupt font rendering on  chrome/edge!
 #sudo apt install ubuntu-restricted-extras
 
 #gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-blue'
