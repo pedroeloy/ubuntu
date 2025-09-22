@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 # Script created for Ubuntu 24.04
 # To execute run:
@@ -57,6 +56,17 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge sta
 rm microsoft.gpg
 sudo apt update -y
 sudo apt install microsoft-edge-stable -y
+
+
+# Install Brave Browser from repository (better than snap)
+# https://brave.com/linux/
+#
+#sudo apt install curl
+#sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+#sudo curl -fsSLo /etc/apt/sources.list.d/brave-browser-release.sources https://brave-browser-apt-release.s3.brave.com/brave-browser.sources
+#sudo apt update
+#sudo apt install brave-browser
+
 
 # Disable ntfs3 kernel driver, and use instead the FUSE ntfs-3g driver that is more reliable
 # https://bugs.launchpad.net/ubuntu/+source/ntfs-3g/+bug/2062972
