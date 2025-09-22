@@ -85,6 +85,9 @@ sudo apt install microsoft-edge-stable -y
 
 # Install Geany Text Editor and get colour themes!
 #sudo apt install geany
+# Install Gnome Software to install software
+#sudo apt install gnome-software
+
 
 # Install extras including microsoft fonts and extra codecs, must be run manually to accept EULAs.
 # Dont install because ttf-mscorefonts-installer seems disrupt font rendering on  chrome/edge!
