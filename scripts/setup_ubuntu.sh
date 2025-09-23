@@ -108,7 +108,6 @@ sudo apt install microsoft-edge-stable -y
 
 # Install Gnome Software (including flatpak support)  and then reboot!
 #sudo apt install gnome-software gnome-software-plugin-flatpak -y
-#sudo apt install flatpak -y
 #flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 
