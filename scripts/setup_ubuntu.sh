@@ -77,8 +77,9 @@ sudo apt install microsoft-edge-stable -y
 # reboot after the change!
 #echo 'blacklist ntfs3' | sudo tee /etc/modprobe.d/disable-ntfs3.conf
 
-# Help with QT5 apps size on wayland like KeepassXC
+# Help with QT5 apps size on wayland like KeepassXC or QBittorrent
 #env QT_QPA_PLATFORM=xcb your_app
+# Note: xcb==XWayland
 
 # Grub Customizer for helping with dualboot menu: https://launchpad.net/~danielrichter2007/+archive/ubuntu/grub-customizer
 # Set Custom Resolution to 640x480 to see better!
