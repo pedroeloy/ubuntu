@@ -98,15 +98,18 @@ sudo apt install microsoft-edge-stable -y
 
 # Remap LIFT mouse Back/Forward to middle mouse
 # Device LIFT, Add: Button EXTRA, Button SIDE -> Key or Macro (mouse)=BTN_MIDDLE
-# Autoload
+# Choose: Autoload
 #sudo apt install input-remapper
 #sudo systemctl enable --now input-remapper
 #input-remapper-gtk
 
 # Install Geany Text Editor and get colour themes!
 #sudo apt install geany
-# Install Gnome Software to install software
-#sudo apt install gnome-software
+
+# Install Gnome Software (including flatpak support)  and then reboot!
+#sudo apt install gnome-software gnome-software-plugin-flatpak -y
+#sudo apt install flatpak -y
+#flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 
 # Install extras including microsoft fonts and extra codecs, must be run manually to accept EULAs.
