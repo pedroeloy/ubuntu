@@ -81,10 +81,15 @@ sudo apt install microsoft-edge-stable -y
 #env QT_QPA_PLATFORM=xcb your_app
 
 # Grub Customizer for helping with dualboot menu: https://launchpad.net/~danielrichter2007/+archive/ubuntu/grub-customizer
+# Set Custom Resolution to 640x480 to see better!
 #sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 #sudo apt-get update
 #sudo apt-get install grub-customizer
 
+# Install snap Notepad++ (WINE)
+# sudo snap install notepad++ 
+# notepad-plus-plus.wine winecfg 
+# Now manually set Graphics->Screen Resolution-> to 144 DPI in the GUI
 
 # Remap LIFT mouse Back/Forward to middle mouse
 # Device LIFT, Add: Button EXTRA, Button SIDE -> Key or Macro (mouse)=BTN_MIDDLE
