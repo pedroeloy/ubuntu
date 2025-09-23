@@ -83,6 +83,13 @@ sudo apt install microsoft-edge-stable -y
 #sudo apt-get install grub-customizer
 
 
+# Remap LIFT mouse Back/Forward to middle mouse
+# Device LIFT, Add: Button EXTRA, Button SIDE -> Key or Macro (mouse)=BTN_MIDDLE
+# Autoload
+#sudo apt install input-remapper
+#sudo systemctl enable --now input-remapper
+#input-remapper-gtk
+
 # Install Geany Text Editor and get colour themes!
 #sudo apt install geany
 # Install Gnome Software to install software
