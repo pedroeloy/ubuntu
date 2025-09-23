@@ -77,6 +77,10 @@ sudo apt install microsoft-edge-stable -y
 # reboot after the change!
 #echo 'blacklist ntfs3' | sudo tee /etc/modprobe.d/disable-ntfs3.conf
 
+# Create user link to access Google Drive after configuring access
+#mkdir -p ~/GoogleDrive
+#ln -s "/run/user/$(id -u)/gvfs/google-drive\:host\=gmail.com\,user\=pedroeloy/" ~/GoogleDrive
+
 # Help with QT5 apps size on wayland like KeepassXC or QBittorrent
 #env QT_QPA_PLATFORM=xcb your_app
 # Note: xcb==XWayland
