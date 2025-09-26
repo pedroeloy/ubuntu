@@ -113,7 +113,7 @@ sudo apt install microsoft-edge-stable -y
 # Find your Edge webapp window → it will show an app entry like:
 # app: microsoft-edge-webapp-Example-com.desktop
 # That string (microsoft-edge-webapp-Example-com) is what GNOME expects for StartupWMClass
-# and edit the corresponding .desktop file in ~/
+# and edit the corresponding .desktop file in ~/.local/share/applications
 
 # Install Geany Text Editor and get colour themes!
 #sudo apt install geany
