@@ -77,9 +77,12 @@ sudo apt install microsoft-edge-stable -y
 # reboot after the change!
 #echo 'blacklist ntfs3' | sudo tee /etc/modprobe.d/disable-ntfs3.conf
 
-# Create user link to access Google Drive after configuring access
-#mkdir -p ~/GoogleDrive
-#ln -s "/run/user/$(id -u)/gvfs/google-drive\:host\=gmail.com\,user\=pedroeloy/" ~/GoogleDrive
+# Make the GDM3 login screen appear at the current monitor configuration
+# The internal monitor will still work when the external monitor is disconnected
+# After an upgrade I may need to run this again
+#sudo cp ~/.config/monitors.xml /var/lib/gdm3/.config/
+#sudo chown gdm:gdm /var/lib/gdm3/.config/monitors.xml
+
 
 # Help with QT5 apps size on wayland like KeepassXC or QBittorrent
 #env QT_QPA_PLATFORM=xcb your_app
