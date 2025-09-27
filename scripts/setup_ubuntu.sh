@@ -8,34 +8,56 @@ echo
 echo Executing script...
 echo
 
+##################################################################################################
 # Start by updating/upgrade the system and rebooting
+##################################################################################################
 #sudo apt update -y 
 #sudo apt upgrade -y
 #sudo reboot
 
+
+##################################################################################################
 #For Virtualbox guest additions install/upgrade
+##################################################################################################
 #sudo apt install bzip2 tar gcc make perl -y
+
+
 
 #Set mouse acceleration similar to Windows (original: accel-profile='default') 
 #gsettings set org.gnome.desktop.peripherals.mouse accel-profile adaptive
 #gsettings set org.gnome.desktop.peripherals.mouse speed 0.3
 
+
+##################################################################################################
 #Set PT keyboard permanently but for user only
+##################################################################################################
 gsettings set org.gnome.desktop.input-sources sources "[('xkb','pt')]"
 
+
+##################################################################################################
 #Settings->Accessibility->Always show scrollbars
+##################################################################################################
 gsettings set org.gnome.desktop.interface overlay-scrolling false
 
+
+##################################################################################################
 #Settings->Accessibility->Seeing->Cursor Size Medium (original=24)
+##################################################################################################
 #gsettings set org.gnome.desktop.interface cursor-size 32
 
+
+##################################################################################################
 #Set Settings->Appearance to Blue, defaults are: Yaru, Adwaita, Yaru
+##################################################################################################
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'     # Choose light theme   
 gsettings set org.gnome.desktop.interface gtk-theme   'Yaru-blue'         # Settings->Appearance->Style->Color = Blue  //Default=Orange=Yaru
 gsettings set org.gnome.desktop.wm.preferences theme  'Yaru-blue'         # Default=Adwaita        
 gsettings set org.gnome.desktop.interface icon-theme  'Yaru-blue'         # Settings->Appearance->Style->Color = Blue  //Default=Orange=Yaru
 
+
+##################################################################################################
 #Install User Themes Extension that is included in gnome-shell-extensions and enable it
+##################################################################################################
 sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extensions -y
 
 # Open Extension Manager and install Dash-to-Panel
@@ -52,7 +74,9 @@ sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extensio
 #gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-blue'
 
 
+##################################################################################################
 # Install MSEdge from repository
+##################################################################################################
 sudo apt install curl -y
 curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
@@ -61,56 +85,76 @@ rm microsoft.gpg
 sudo apt update -y
 sudo apt install microsoft-edge-stable -y
 
+
+##################################################################################################
 # Make vim replace vi has the default editor
+##################################################################################################
 #sudo apt install vim -y
-#sudo update-alternatives --set editor /usr/bin/vim
+#sudo update-alternatives --set editor /usr/bin/vim.basic
 
 
+##################################################################################################
 # Install Brave Browser from repository (better than snap)
 # https://brave.com/linux/
-#
+##################################################################################################
 #sudo apt install curl
 #sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 #sudo curl -fsSLo /etc/apt/sources.list.d/brave-browser-release.sources https://brave-browser-apt-release.s3.brave.com/brave-browser.sources
 #sudo apt update
 #sudo apt install brave-browser
 
-
+##################################################################################################
 # Disable ntfs3 kernel driver, and use instead the FUSE ntfs-3g driver that is more reliable
 # https://bugs.launchpad.net/ubuntu/+source/ntfs-3g/+bug/2062972
 # reboot after the change!
+##################################################################################################
 #echo 'blacklist ntfs3' | sudo tee /etc/modprobe.d/disable-ntfs3.conf
 
+
+##################################################################################################
 # Make the GDM3 login screen appear at the current monitor configuration
 # The internal monitor will still work when the external monitor is disconnected
 # After an upgrade I may need to run this again
+##################################################################################################
 #sudo cp ~/.config/monitors.xml /var/lib/gdm3/.config/
 #sudo chown gdm:gdm /var/lib/gdm3/.config/monitors.xml
 
 
+##################################################################################################
 # Help with QT5 apps size on wayland like KeepassXC or QBittorrent
+##################################################################################################
 #env QT_QPA_PLATFORM=xcb your_app
 # Note: xcb==XWayland
 
+
+##################################################################################################
 # Grub Customizer for helping with dualboot menu: https://launchpad.net/~danielrichter2007/+archive/ubuntu/grub-customizer
 # Set Custom Resolution to 640x480 to see better!
+##################################################################################################
 #sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 #sudo apt-get update
 #sudo apt-get install grub-customizer
 
+
+##################################################################################################
 # Install snap Notepad++ (WINE)
+##################################################################################################
 # sudo snap install notepad++ 
 # notepad-plus-plus.wine winecfg 
 # Now manually set Graphics->Screen Resolution-> to 144 DPI in the GUI
 
+
+##################################################################################################
 # Remap LIFT mouse Back/Forward to middle mouse
 # Device LIFT, Add: Button EXTRA, Button SIDE -> Key or Macro (mouse)=BTN_MIDDLE
 # Choose: Autoload
+##################################################################################################
 #sudo apt install input-remapper
 #sudo systemctl enable --now input-remapper
 #input-remapper-gtk
 
 
+##################################################################################################
 # Correct Edge Webapp Icons when running webapps (Teams for example)
 # Press <kbd>Alt</kbd>+<kbd>F2</kbd>, type lg, and hit Enter.
 # Go to the Windows tab.
@@ -118,11 +162,18 @@ sudo apt install microsoft-edge-stable -y
 # app: microsoft-edge-webapp-Example-com.desktop
 # That string (microsoft-edge-webapp-Example-com) is what GNOME expects for StartupWMClass
 # and edit the corresponding .desktop file in ~/.local/share/applications
+##################################################################################################
 
+
+##################################################################################################
 # Install Geany Text Editor and get colour themes!
+##################################################################################################
 #sudo apt install geany
 
+
+##################################################################################################
 # Install Gnome Software (including flatpak support)  and then reboot!
+##################################################################################################
 #sudo apt install gnome-software gnome-software-plugin-flatpak -y
 #flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
