@@ -103,6 +103,7 @@ sudo apt install microsoft-edge-stable -y
 #sudo apt update
 #sudo apt install brave-browser
 
+
 ##################################################################################################
 # Disable ntfs3 kernel driver, and use instead the FUSE ntfs-3g driver that is more reliable
 # https://bugs.launchpad.net/ubuntu/+source/ntfs-3g/+bug/2062972
@@ -170,10 +171,12 @@ sudo apt install microsoft-edge-stable -y
 ##################################################################################################
 #sudo apt install geany -y
 
+
 ##################################################################################################
 # Install XFCE Terminal
 ##################################################################################################
 #sudo apt install xfce-terminal -y
+
 
 ##################################################################################################
 # Install Gnome Software (including flatpak support)  and then reboot!
@@ -182,9 +185,11 @@ sudo apt install microsoft-edge-stable -y
 #flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 
+
 # Install extras including microsoft fonts and extra codecs, must be run manually to accept EULAs.
 # Dont install because ttf-mscorefonts-installer seems disrupt font rendering on  chrome/edge!
 #sudo apt install ubuntu-restricted-extras
+
 
 #gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-blue'
 #TERMINAL_PROFILEID=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')
