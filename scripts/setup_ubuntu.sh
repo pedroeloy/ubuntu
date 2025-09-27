@@ -61,6 +61,10 @@ rm microsoft.gpg
 sudo apt update -y
 sudo apt install microsoft-edge-stable -y
 
+# Make vim replace vi has the default editor
+#sudo apt install vim -y
+#sudo update-alternatives --set editor /usr/bin/vim
+
 
 # Install Brave Browser from repository (better than snap)
 # https://brave.com/linux/
