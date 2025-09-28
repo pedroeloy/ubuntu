@@ -36,6 +36,7 @@ systemctl --user daemon-reload
 systemctl --user enable rclone-gdrive
 
 
+echo Configure manually now...
 
 # rclone config
 # n) New remote
