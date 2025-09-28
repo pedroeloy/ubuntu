@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Fix Microsoft Edge PWAs icons on GNOME Wayland
 # by changing StartupWMClass= in the .desktop files
-#
-#
+# To execute run:
+# sudo apt install curl ; curl -fsSL https://raw.githubusercontent.com/pedroeloy/ubuntu/refs/heads/main/scripts/fix_edge_pwas_icon.sh | bash
 
 # Manual Instructions
 # Correct Edge Webapp Icons when running webapps (Teams for example)
