@@ -37,8 +37,9 @@ systemctl --user enable rclone-gdrive
 
 
 echo Configure manually now...
-
 # rclone config
+
+# Instructions:
 # n) New remote
 # name: gdrive
 # Storage: drive
@@ -47,19 +48,23 @@ echo Configure manually now...
 # Scope: 1 - Full access
 # service_account_file: [ENTER]
 # Advanced config: No
-# (Do login in Browser)
+# (Login in Browser)
 # Auto Config: Yes
 # Shared Drive (Team Drive): No
 # Keep this drive remote: Yes
 # q) Quit Config
+
+# Test
 # rclone ls gdrive:
-# rclone mount gdrive: ~/GoogleDrive --vfs-cache-mode writes
+
 
 #Startup
 #systemctl --user start rclone-gdrive
 
 # Usefull commands:
-#fusermount3 -u ~/GoogleDrive  # unmount
-#rclone listremotes            # list remotes
-#rclone sync ~/Documents gdrive:DocumentsBackup    # sync/backup
+# rclone ls gdrive:            # Test ls
+# rclone mount gdrive: ~/GoogleDrive --vfs-cache-mode writes #Mount manually! 
+# fusermount3 -u ~/GoogleDrive  # unmount
+# rclone listremotes            # list remotes
+# rclone sync ~/Documents gdrive:DocumentsBackup    # sync/backup
 
