@@ -5,9 +5,9 @@
 # sudo apt install curl ; curl -fsSL https://raw.githubusercontent.com/pedroeloy/ubuntu/refs/heads/main/scripts/configure_googledrive_on_home.sh | bash
 ##################################################################################################
 
-#sudo apt install rclone fuse3 -y
-#mkdir -p ~/GoogleDrive
-#mkdir -p ~/.config/systemd/user
+sudo apt install rclone fuse3 -y
+mkdir -p ~/GoogleDrive
+mkdir -p ~/.config/systemd/user
 
 cat  <<EOF > ~/.config/systemd/user/rclone-gdrive.service
 [Unit]
