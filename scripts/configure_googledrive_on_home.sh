@@ -7,7 +7,7 @@
 #mkdir -p ~/GoogleDrive
 #mkdir -p ~/.config/systemd/user
 
- cat  <<EOF > ~/.config/systemd/user/rclone-gdrive.service
+cat  <<EOF > ~/.config/systemd/user/rclone-gdrive.service
 [Unit]
 Description=Mount Google Drive via rclone
 After=network-online.target
