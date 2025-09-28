@@ -54,12 +54,10 @@ echo Configure manually now...
 # Keep this drive remote: Yes
 # q) Quit Config
 
-# Test
-# rclone ls gdrive:
-
 
 #Startup
 #systemctl --user start rclone-gdrive
+
 
 # Usefull commands:
 # rclone ls gdrive:            # Test ls
