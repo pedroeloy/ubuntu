@@ -87,7 +87,7 @@ sudo apt install microsoft-edge-stable -y
 
 
 ##################################################################################################
-# Make vim replace vi has the default editor
+# Replace vi with vim as the default editor
 ##################################################################################################
 #sudo apt install vim -y
 #sudo update-alternatives --set editor /usr/bin/vim.basic
