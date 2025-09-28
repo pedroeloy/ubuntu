@@ -2,7 +2,7 @@
 ##################################################################################################
 # Configure Gdrive on ~/GoogleDrive on Ubuntu 24.04
 # To execute run:
-# sudo apt install curl ; curl -fsSL https://raw.githubusercontent.com/pedroeloy/ubuntu/refs/heads/main/scripts/configure_googledrive_on_home.sh | bash
+# sudo apt install curl -y ; curl -fsSL https://raw.githubusercontent.com/pedroeloy/ubuntu/refs/heads/main/scripts/configure_googledrive_on_home.sh | bash
 ##################################################################################################
 
 sudo apt install rclone fuse3 -y
