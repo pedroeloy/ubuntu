@@ -169,6 +169,26 @@ sudo apt install microsoft-edge-stable -y
 
 
 ##################################################################################################
+# Configure Gdrive on ~/GoogleDrive, after installation execute:
+# rclone config
+# n) New remote
+# name: gdrive
+# Storage: drive
+# client id: [ENTER]
+# client secret: [ENTER]
+# Scope: 1 - Full access
+# service_account_file: [ENTER]
+# Advanced config: No
+# Auto Config: Yes
+# Shared Drive (Team Drive): No
+# Keep this drive remote: Yes
+# q) Quit Config
+##################################################################################################
+#sudo apt install rclone fuse3 -y
+
+
+
+##################################################################################################
 # Install Gnome Software (including flatpak support)  and then reboot!
 ##################################################################################################
 #sudo apt install gnome-software gnome-software-plugin-flatpak -y
