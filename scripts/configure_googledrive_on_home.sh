@@ -1,6 +1,8 @@
-
+#!/usr/bin/env bash
 ##################################################################################################
-# Configure Gdrive on ~/GoogleDrive:
+# Configure Gdrive on ~/GoogleDrive on Ubuntu 24.04
+# To execute run:
+# sudo apt install curl ; curl -fsSL https://raw.githubusercontent.com/pedroeloy/ubuntu/refs/heads/main/scripts/configure_googledrive_on_home.sh | bash
 ##################################################################################################
 
 #sudo apt install rclone fuse3 -y
@@ -28,6 +30,8 @@ Environment=PATH=/usr/bin:/bin:/usr/sbin:/sbin
 WantedBy=default.target
 EOF
 
+
+exit 0
 systemctl --user daemon-reload
 systemctl --user enable rclone-gdrive
 
