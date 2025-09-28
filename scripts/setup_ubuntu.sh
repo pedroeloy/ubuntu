@@ -146,13 +146,14 @@ sudo apt install microsoft-edge-stable -y
 
 
 ##################################################################################################
-# Remap LIFT mouse Back/Forward to middle mouse
-# Device LIFT, Add: Button EXTRA, Button SIDE -> Key or Macro (mouse)=BTN_MIDDLE
+# Remap LIFT mouse Back/Forward to middle mouse button
+# Manually run afterwards:  input-remapper-gtk
+# And Configure: Device LIFT, Add: Button EXTRA, Button SIDE -> Key or Macro (mouse)=BTN_MIDDLE
 # Choose: Autoload
 ##################################################################################################
 #sudo apt install input-remapper
 #sudo systemctl enable --now input-remapper
-#input-remapper-gtk
+
 
 
 ##################################################################################################
