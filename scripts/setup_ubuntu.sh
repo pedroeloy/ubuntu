@@ -84,6 +84,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge sta
 rm microsoft.gpg
 sudo apt update -y
 sudo apt install microsoft-edge-stable -y
+#sudo apt install microsoft-edge-beta -y    # Edge Beta
 
 
 ##################################################################################################
