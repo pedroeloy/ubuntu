@@ -22,7 +22,7 @@ ExecStart=/usr/bin/rclone mount gdrive: %h/GoogleDrive \
     --poll-interval 15s \
     --umask 002 \
     --uid $(id -u) --gid $(id -g) \
-    --allow-other
+    #--allow-other
 Restart=on-failure
 Environment=PATH=/usr/bin:/bin:/usr/sbin:/sbin
 
@@ -30,13 +30,11 @@ Environment=PATH=/usr/bin:/bin:/usr/sbin:/sbin
 WantedBy=default.target
 EOF
 
-
-exit 0
 systemctl --user daemon-reload
 systemctl --user enable rclone-gdrive
 
 
-echo Configure manually now...
+echo Manual Configuration...
 # rclone config
 
 # Instructions:
@@ -56,10 +54,10 @@ echo Configure manually now...
 
 
 #Startup
-#systemctl --user start rclone-gdrive
+systemctl --user restart rclone-gdrive
 
 
-# Usefull commands:
+# Usefull extra commands:
 # rclone ls gdrive:            # Test ls
 # rclone mount gdrive: ~/GoogleDrive --vfs-cache-mode writes #Mount manually! 
 # fusermount3 -u ~/GoogleDrive  # unmount
