@@ -21,7 +21,7 @@ ExecStart=/usr/bin/rclone mount gdrive: %h/GoogleDrive \
     --dir-cache-time 1h \
     --poll-interval 15s \
     --umask 002 \
-    --uid 1000 --gid 1000 \
+    --uid $(id -u) --gid $(id -g) \
     --allow-other
 Restart=on-failure
 Environment=PATH=/usr/bin:/bin:/usr/sbin:/sbin
