@@ -139,10 +139,10 @@ sudo apt install microsoft-edge-stable -y
 
 ##################################################################################################
 # Install snap Notepad++ (WINE)
+# Then run manually:  notepad-plus-plus.wine winecfg
+# And set Graphics->Screen Resolution-> to 144 DPI in the GUI
 ##################################################################################################
 # sudo snap install notepad++ 
-# notepad-plus-plus.wine winecfg 
-# Now manually set Graphics->Screen Resolution-> to 144 DPI in the GUI
 
 
 ##################################################################################################
