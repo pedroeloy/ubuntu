@@ -53,7 +53,7 @@ systemctl --user enable rclone-gdrive
 #Startup
 #systemctl --user start rclone-gdrive
 
-
+# Usefull commands:
 #fusermount3 -u ~/GoogleDrive  # unmount
 #rclone listremotes            # list remotes
 #rclone sync ~/Documents gdrive:DocumentsBackup    # sync/backup
