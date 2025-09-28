@@ -179,6 +179,7 @@ sudo apt install microsoft-edge-stable -y
 # Scope: 1 - Full access
 # service_account_file: [ENTER]
 # Advanced config: No
+# (Do login in Browser)
 # Auto Config: Yes
 # Shared Drive (Team Drive): No
 # Keep this drive remote: Yes
