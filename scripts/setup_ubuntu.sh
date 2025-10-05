@@ -166,6 +166,9 @@ sudo apt install microsoft-edge-stable -y
 # Install XFCE Terminal
 ##################################################################################################
 #sudo apt install xfce-terminal -y
+#echo 'export VTE_DISABLE_STYLE_HIGHLIGHTING=1' >> ~/.bashrc    #Fix for XFCE selection bug drawing
+
+
 
 
 
