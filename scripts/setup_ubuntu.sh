@@ -123,10 +123,10 @@ sudo apt install microsoft-edge-stable -y
 
 
 ##################################################################################################
-# Help with QT5 apps size on wayland like KeepassXC or QBittorrent
+# Help with QT5 apps windows buttons, and app size, like KeepassXC or QBittorrent
 ##################################################################################################
-#env QT_QPA_PLATFORM=xcb your_app
-# Note: xcb==XWayland
+# export QT_QPA_PLATFORM="xcb;wayland"
+# export QT_SCALE_FACTOR=1.2
 
 
 ##################################################################################################
