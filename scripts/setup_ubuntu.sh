@@ -49,10 +49,10 @@ gsettings set org.gnome.desktop.interface overlay-scrolling false
 ##################################################################################################
 #Set Settings->Appearance to Blue, defaults are: Yaru, Adwaita, Yaru
 ##################################################################################################
-gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'     # Choose light theme   
-gsettings set org.gnome.desktop.interface gtk-theme   'Yaru-blue'         # Settings->Appearance->Style->Color = Blue  //Default=Orange=Yaru
-gsettings set org.gnome.desktop.wm.preferences theme  'Yaru-blue'         # Default=Adwaita        
-gsettings set org.gnome.desktop.interface icon-theme  'Yaru-blue'         # Settings->Appearance->Style->Color = Blue  //Default=Orange=Yaru
+gsettings set org.gnome.desktop.interface color-scheme  'prefer-light'      # Choose light theme, original='default'   
+gsettings set org.gnome.desktop.interface gtk-theme     'Yaru-blue'         # Settings->Appearance->Style->Color = Blue , original='Yaru'
+gsettings set org.gnome.desktop.wm.preferences theme    'Yaru-blue'         # original='Adwaita'        
+gsettings set org.gnome.desktop.interface icon-theme    'Yaru-blue'         # Settings->Appearance->Style->Color = Blue  ,  original='Yaru'
 
 
 ##################################################################################################
