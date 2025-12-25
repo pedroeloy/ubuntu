@@ -139,9 +139,10 @@ EOF
 
 ##################################################################################################
 # Help with QT5 apps windows buttons, and app size, like KeepassXC or QBittorrent
+# https://ubuntuhandbook.org/index.php/2025/10/theme-qt-apps-ubuntu/
 ##################################################################################################
 # export QT_QPA_PLATFORM="xcb;wayland"
-# export QT_SCALE_FACTOR=1.2
+# export QT_SCALE_FACTOR=1.15
 
 
 ##################################################################################################
