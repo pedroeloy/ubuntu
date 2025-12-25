@@ -177,10 +177,9 @@ sudo apt install microsoft-edge-stable -y
 
 
 ##################################################################################################
-# Install Qogir light theme!
+# Donwload and Install Qogir light theme!
 ##################################################################################################
-
-
+# ./install.sh --libadwaita -tweaks square round --icon ubuntu
 
 
 
