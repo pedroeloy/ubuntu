@@ -169,9 +169,6 @@ sudo apt install microsoft-edge-stable -y
 #echo 'export VTE_DISABLE_STYLE_HIGHLIGHTING=1' >> ~/.bashrc    #Fix for XFCE selection bug drawing
 
 
-
-
-
 ##################################################################################################
 # Install Gnome Software (including flatpak support)  and then reboot!
 ##################################################################################################
@@ -179,10 +176,20 @@ sudo apt install microsoft-edge-stable -y
 #flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 
+##################################################################################################
+# Install Qogir light theme!
+##################################################################################################
+
+
+
+
+
+##################################################################################################
+# Dangerous actions and drafts!
+##################################################################################################
 # Install extras including microsoft fonts and extra codecs, must be run manually to accept EULAs.
 # Dont install because ttf-mscorefonts-installer seems disrupt font rendering on  chrome/edge!
 #sudo apt install ubuntu-restricted-extras
-
 
 #gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-blue'
 #TERMINAL_PROFILEID=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')
