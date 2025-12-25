@@ -114,6 +114,21 @@ sudo apt install microsoft-edge-stable -y
 
 
 ##################################################################################################
+# After configuring google drive fo pedroeloy@gmail.com manually then set it to mount on login!
+##################################################################################################
+cat <<EOF > ~/.config/autostart/mount-google-drive.desktop
+[Desktop Entry]
+Type=Application
+Exec=bash -c "gio mount google-drive://pedroeloy@gmail.com/"
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Mount Google Drive
+Comment=Mounts Google Drive folder on login
+EOF
+
+
+##################################################################################################
 # Make the GDM3 login screen appear at the current monitor configuration
 # The internal monitor will still work when the external monitor is disconnected
 # After an upgrade I may need to run this again
