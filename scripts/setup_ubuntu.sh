@@ -33,6 +33,12 @@ echo
 ##################################################################################################
 gsettings set org.gnome.desktop.input-sources sources "[('xkb','pt')]"
 
+##################################################################################################
+#Show hidden files in Nautilus and file chooser
+##################################################################################################
+gsettings set org.gnome.nautilus.preferences show-hidden-files true      # original: false
+gsettings set org.gtk.gtk4.Settings.FileChooser show-hidden true         # original: false
+
 
 ##################################################################################################
 #Settings->Accessibility->Always show scrollbars
