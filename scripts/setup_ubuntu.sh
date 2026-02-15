@@ -25,7 +25,7 @@ echo
 
 #Set mouse acceleration similar to Windows (original: accel-profile='default') 
 #gsettings set org.gnome.desktop.peripherals.mouse accel-profile adaptive
-#gsettings set org.gnome.desktop.peripherals.mouse speed 0.3
+#gsettings set org.gnome.desktop.peripherals.mouse speed -0.5
 
 
 ##################################################################################################
