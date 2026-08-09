@@ -11,7 +11,7 @@ echo
 ##################################################################################################
 # Start by updating/upgrade the system and rebooting
 ##################################################################################################
-#sudo apt update -y 
+#sudo apt update -y    # this refreshes only the list!
 #sudo apt upgrade -y
 #sudo reboot
 
