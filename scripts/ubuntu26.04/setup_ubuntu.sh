@@ -138,9 +138,10 @@ EOF
 # Make the GDM3 login screen appear at the current monitor configuration
 # The internal monitor will still work when the external monitor is disconnected
 # After an upgrade I may need to run this again
+# Run this after settings the external monitor as main?
 ##################################################################################################
-#sudo cp ~/.config/monitors.xml /var/lib/gdm3/.config/
-#sudo chown gdm:gdm /var/lib/gdm3/.config/monitors.xml
+sudo cp ~/.config/monitors.xml /var/lib/gdm3/seat0/config/
+
 
 
 ##################################################################################################
