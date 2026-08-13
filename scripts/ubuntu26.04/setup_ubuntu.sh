@@ -49,7 +49,7 @@ gsettings set org.gnome.desktop.interface overlay-scrolling false
 ##################################################################################################
 #Settings->Accessibility->Seeing->Cursor Size Medium (original=24)
 ##################################################################################################
-#gsettings set org.gnome.desktop.interface cursor-size 32
+gsettings set org.gnome.desktop.interface cursor-size 32
 
 
 ##################################################################################################
@@ -67,7 +67,7 @@ gsettings set org.gnome.desktop.interface icon-theme    'Yaru-blue'         # Se
 sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extensions -y
 
 # Open Extension Manager and install Dash-to-Panel
-# Behaviour->Ungroup Applications, Configure->Maximum Width=60
+# Set: Behaviour->Ungroup Applications, Configure->Maximum Width=60. Tab:Position->Top
 
 # Gnome extention "Jut Perfection"
 # Install "impatience" extension to increase animation speed, or view and try:  Just set GNOME_SHELL_SLOWDOWN_FACTOR=0.5 in /etc/environment.
