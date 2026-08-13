@@ -185,7 +185,7 @@ sudo apt-get install grub-customizer
 ##################################################################################################
 # Install XFCE Terminal
 ##################################################################################################
-#sudo apt install xfce-terminal -y
+sudo apt install xfce4-terminal -y
 #echo 'export VTE_DISABLE_STYLE_HIGHLIGHTING=1' >> ~/.bashrc    #Fix for XFCE selection bug drawing
 
 
