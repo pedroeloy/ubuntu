@@ -69,9 +69,6 @@ sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extensio
 # Open Extension Manager and install Dash-to-Panel
 # Behaviour->Ungroup Applications, Configure->Maximum Width=60
 
-#Move the Dock "Show Apps" button from the bottom to the top (original=false)
-#gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
-
 # Gnome extention "Jut Perfection"
 # Install "impatience" extension to increase animation speed, or view and try:  Just set GNOME_SHELL_SLOWDOWN_FACTOR=0.5 in /etc/environment.
 # Install "App Icons Taskbar" extension has an alternativo to "dash to panel"
@@ -156,9 +153,9 @@ sudo cp ~/.config/monitors.xml /var/lib/gdm3/seat0/config/
 # Grub Customizer for helping with dualboot menu: https://launchpad.net/~danielrichter2007/+archive/ubuntu/grub-customizer
 # Set Custom Resolution to 640x480 to see better!
 ##################################################################################################
-#sudo add-apt-repository ppa:danielrichter2007/grub-customizer
-#sudo apt-get update
-#sudo apt-get install grub-customizer
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt-get update
+sudo apt-get install grub-customizer
 
 
 ##################################################################################################
