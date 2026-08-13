@@ -101,11 +101,11 @@ sudo apt install microsoft-edge-stable -y
 # Install Brave Browser from repository (better than snap)
 # https://brave.com/linux/
 ##################################################################################################
-#sudo apt install curl
-#sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-#sudo curl -fsSLo /etc/apt/sources.list.d/brave-browser-release.sources https://brave-browser-apt-release.s3.brave.com/brave-browser.sources
-#sudo apt update
-#sudo apt install brave-browser
+sudo apt install curl
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+sudo curl -fsSLo /etc/apt/sources.list.d/brave-browser-release.sources https://brave-browser-apt-release.s3.brave.com/brave-browser.sources
+sudo apt update
+sudo apt install brave-browser
 
 
 ##################################################################################################
@@ -119,16 +119,16 @@ sudo apt install microsoft-edge-stable -y
 ##################################################################################################
 # After configuring google drive fo pedroeloy@gmail.com manually then set it to mount on login!
 ##################################################################################################
-cat <<EOF > ~/.config/autostart/mount-google-drive.desktop
-[Desktop Entry]
-Type=Application
-Exec=bash -c "gio mount google-drive://pedroeloy@gmail.com/"
-Hidden=false
-NoDisplay=false
-X-GNOME-Autostart-enabled=true
-Name=Mount Google Drive
-Comment=Mounts Google Drive folder on login
-EOF
+#cat <<EOF > ~/.config/autostart/mount-google-drive.desktop
+#[Desktop Entry]
+#Type=Application
+#Exec=bash -c "gio mount google-drive://pedroeloy@gmail.com/"
+#Hidden=false
+#NoDisplay=false
+#X-GNOME-Autostart-enabled=true
+#Name=Mount Google Drive
+#Comment=Mounts Google Drive folder on login
+#EOF
 
 
 ##################################################################################################
@@ -192,8 +192,8 @@ sudo apt-get install grub-customizer
 ##################################################################################################
 # Install Gnome Software (including flatpak support)  and then reboot!
 ##################################################################################################
-#sudo apt install gnome-software gnome-software-plugin-flatpak -y
-#flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo apt install gnome-software gnome-software-plugin-flatpak -y
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 
 ##################################################################################################
