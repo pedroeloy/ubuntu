@@ -17,7 +17,7 @@ echo
 read -p "Enter DPI (default 120=125%, 96=100%, 144=150% ): " MY_DPI
 MY_DPI=${MY_DPI:-120}
 
-# Prompt for Sensitivity (default to 10 if left blank)
+# Prompt for Sensitivity (default to 10 if left blank, does not seem to work?)
 read -p "Enter Windows Sensitivity (1-20, default 10): " MY_SENSITIVITY
 MY_SENSITIVITY=${MY_SENSITIVITY:-10}
 
@@ -90,6 +90,12 @@ cd "$WORK_DIR"
 
 # Install all newly generated .deb packages
 dpkg -i *.deb || apt-get install -f -y
+
+
+echo "=== 7. Change gsettings ==="
+
+gsettings set org.gnome.desktop.peripherals.mouse speed -0.645
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'default'
 
 echo "=== Success! ==="
 echo "Patched libinput has been compiled and deployed."
