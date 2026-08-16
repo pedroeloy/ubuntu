@@ -51,6 +51,10 @@ gsettings set org.gnome.desktop.interface overlay-scrolling false
 ##################################################################################################
 gsettings set org.gnome.desktop.interface cursor-size 32
 
+##################################################################################################
+#Settings->Power->Power Saving->Automatic Screen Blank: Disable
+##################################################################################################
+gsettings set org.gnome.desktop.session idle-delay 0
 
 ##################################################################################################
 #Set Settings->Appearance to Blue, defaults are: Yaru, Adwaita, Yaru
