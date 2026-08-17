@@ -41,6 +41,12 @@ gsettings set org.gtk.gtk4.Settings.FileChooser show-hidden true         # origi
 
 
 ##################################################################################################
+###  Install microsoft fonts, must accept EULA on terminal!
+##################################################################################################
+sudo apt install ttf-mscorefonts-installer
+
+
+##################################################################################################
 #Settings->Accessibility->Always show scrollbars
 ##################################################################################################
 gsettings set org.gnome.desktop.interface overlay-scrolling false
