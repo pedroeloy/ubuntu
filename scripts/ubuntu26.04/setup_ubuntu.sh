@@ -63,6 +63,11 @@ gsettings set org.gnome.desktop.interface cursor-size 32
 gsettings set org.gnome.desktop.session idle-delay 0
 
 ##################################################################################################
+# Change increase/decrease step volume by using the volume keys step from default (6) do 2
+##################################################################################################
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-step 2
+
+##################################################################################################
 #Set Settings->Appearance to Blue, defaults are: Yaru, Adwaita, Yaru
 ##################################################################################################
 gsettings set org.gnome.desktop.interface color-scheme  'prefer-light'      # Choose light theme, original='default'   
