@@ -165,13 +165,23 @@ sudo cp ~/.config/monitors.xml /var/lib/gdm3/seat0/config/
 
 
 ##################################################################################################
+# This does not exist in 27.10
 # Grub Customizer for helping with dualboot menu: https://launchpad.net/~danielrichter2007/+archive/ubuntu/grub-customizer
 # Set Custom Resolution to 640x480 to see better!
 ##################################################################################################
-sudo add-apt-repository ppa:danielrichter2007/grub-customizer
-sudo apt-get update
-sudo apt-get install grub-customizer
+#sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+#sudo apt-get update
+#sudo apt-get install grub-customizer
 
+
+##################################################################################################
+# Edit manually /etc/default/grub
+# change: 
+# GRUB_DEFAULT=0    #choose option order
+# GRUB_GFXMODE=640x480
+# GRUB_INIT_TUNE="480 440 1"
+# and 
+# sudo update-grub
 
 ##################################################################################################
 # Install snap Notepad++ (WINE)  (edge channel)
